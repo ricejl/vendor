@@ -55,17 +55,11 @@ namespace vendor.Controllers
             }
         }
 
-        public void PurchaseItem()
-        {
-            // take in item number
-            // parse integer, pass on to service
-        }
-
         private void PrintMessages()
         {
             foreach (Message message in Service.Messages)
             {
-                System.Console.WriteLine(message);
+                System.Console.WriteLine(message.Body);
             }
             Service.Messages.Clear();
         }

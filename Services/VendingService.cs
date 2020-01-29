@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using vendor.Models;
 
@@ -22,7 +23,7 @@ namespace vendor.Services
         public void DepositDollar()
         {
             VendingMachine.Credit++;
-            Messages.Add(new Message($"Total credit: ${VendingMachine.Credit}\n"));
+            Messages.Add(new Message($"Total credit: ${VendingMachine.Credit}\n", ConsoleColor.Red));
             PrintSelection();
         }
 
