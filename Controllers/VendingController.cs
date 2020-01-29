@@ -63,7 +63,7 @@ namespace vendor.Controllers
 
         private void PrintMessages()
         {
-            foreach (string message in Service.Messages)
+            foreach (Message message in Service.Messages)
             {
                 System.Console.WriteLine(message);
             }

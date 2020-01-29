@@ -19,11 +19,11 @@ namespace vendor.Models
         {
             if (IncludesBatteries)
             {
-                return $"{Title} - {Price} (batteries included)";
+                return $"{Title} - ${Price} (batteries included)";
             }
             else
             {
-                return $"{Title} - {Price} (batteries not included)";
+                return $"{Title} - ${Price} (batteries not included)";
             }
         }
     }

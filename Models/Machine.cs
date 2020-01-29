@@ -15,10 +15,11 @@ namespace vendor.Models
             Candy twix = new Candy("Twix", 1f, false);
             Candy twizzlers = new Candy("Chocolate Twizzlers", 1.25f, false);
             Electronics headphones = new Electronics(false, "SkullCandy headphones", 20f);
+            Electronics walkman = new Electronics(true, "80s-Style Walkman", 40f);
 
             Selection.AddRange(new IPurchasable[]
             {
-                burrito, rabbit, twix, twizzlers, headphones
+                burrito, rabbit, twix, twizzlers, headphones, walkman
             });
         }
 
