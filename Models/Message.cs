@@ -10,6 +10,7 @@ namespace vendor.Models
         public void Print()
         {
             Console.ForegroundColor = Color;
+            // Console.BackgroundColor = ConsoleColor.Green;
             System.Console.WriteLine(Body);
         }
 

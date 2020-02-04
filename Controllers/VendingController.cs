@@ -59,7 +59,7 @@ namespace vendor.Controllers
         {
             foreach (Message message in Service.Messages)
             {
-                System.Console.WriteLine(message.Body);
+                message.Print();
             }
             Service.Messages.Clear();
         }

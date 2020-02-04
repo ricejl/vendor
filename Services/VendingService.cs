@@ -23,7 +23,7 @@ namespace vendor.Services
         public void DepositDollar()
         {
             VendingMachine.Credit++;
-            Messages.Add(new Message($"Total credit: ${VendingMachine.Credit}\n", ConsoleColor.Red));
+            Messages.Add(new Message($"Total credit: ${VendingMachine.Credit}\n", ConsoleColor.Blue));
             PrintSelection();
         }
 
@@ -31,7 +31,7 @@ namespace vendor.Services
         {
             if (num < 0 || num >= VendingMachine.Selection.Count)
             {
-                Messages.Add(new Message("Invalid selection number"));
+                Messages.Add(new Message("Invalid selection number", ConsoleColor.DarkYellow));
                 PrintSelection();
                 return;
             }
